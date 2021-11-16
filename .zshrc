@@ -8,6 +8,8 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 PROMPT='%n@%m %c'\$vcs_info_msg_0_' %# '
 precmd(){ vcs_info }
+
+# alias
 alias vim='nvim'
 alias rm='rm -i'
 alias cp='cp -v'
