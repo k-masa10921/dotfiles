@@ -8,6 +8,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'brglng/vim-im-select'
+Plug 'thinca/vim-visualstar'
 if exists('g:vscode')
   Plug 'asvetliakov/vim-easymotion'
   nmap s <Plug>(easymotion-s2)
@@ -23,7 +24,6 @@ let g:im_select_default = 'com.apple.keylayout.ABC'
 colorscheme onedark
 let g:highlightedyank_highlight_duration = 150
 let g:EasyMotion_keys = "fjdklsa;io"
-
 "share setting
 set number
 set tabstop=2
