@@ -1,4 +1,9 @@
-call plug#begin('~/.config/nvim/plugged')
+if has('mac')
+  call plug#begin('~/.config/nvim/plugged')
+endif
+if has('unix')
+  call plug#begin()
+endif
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-jp/vimdoc-ja'
@@ -20,7 +25,9 @@ call plug#end()
 
 "plugin setting
 let mapleader = "\<Space>"
-let g:im_select_default = 'com.apple.keylayout.ABC'
+if has('mac')
+  let g:im_select_default = 'com.apple.keylayout.ABC'
+endif
 colorscheme onedark
 let g:highlightedyank_highlight_duration = 150
 let g:EasyMotion_keys = "fjdklsa;io"
