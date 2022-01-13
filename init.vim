@@ -34,8 +34,8 @@ set clipboard+=unnamed
 set hls
 nnoremap x "_x
 nnoremap c "_c
+
 autocmd BufEnter * silent! set autoindent smartindent
-if exists('g:vscode')
-  finish
-endif
-" nvim only setting
+" if exists('g:vscode')
+"   finish
+" endif
