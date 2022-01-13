@@ -1,8 +1,11 @@
  #!/bin/bash
 
 DOT_FILES=(.tmux.conf)
+SCRIPT_DIR=$(cd $(dirname ${0}) && pwd)
 
-for file in ${DOT_FILES[@]}
-do
-  ln -sfv $HOME/dotfiles/$file $HOME/$file
-done
+echo $SCRIPT_DIR
+
+# for file in ${DOT_FILES[@]}
+# do
+#   ln -sfv $HOME/dotfiles/$file $HOME/$file
+# done
