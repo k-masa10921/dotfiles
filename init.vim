@@ -10,6 +10,9 @@ Plug 'vim-jp/vimdoc-ja'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
+Plug 'raphamorim/lucario'
+Plug 'jdkanani/vim-material-theme'
+Plug 'tomasr/molokai'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'brglng/vim-im-select'
 Plug 'thinca/vim-visualstar'
@@ -32,6 +35,14 @@ call plug#end()
 
 "plugin setting
 let mapleader = "\<Space>"
+if has('mac')
+  let g:im_select_default = 'com.apple.keylayout.ABC'
+endif
+
+syntax enable
+colorscheme lucario
+set t_Co=16
+
 let g:highlightedyank_highlight_duration = 150
 let g:EasyMotion_keys = "fjdklsa;io"
 "share setting
