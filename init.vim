@@ -35,9 +35,6 @@ call plug#end()
 
 "plugin setting
 let mapleader = "\<Space>"
-if has('mac')
-  let g:im_select_default = 'com.apple.keylayout.ABC'
-endif
 
 syntax enable
 colorscheme lucario
