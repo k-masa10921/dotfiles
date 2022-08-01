@@ -53,12 +53,6 @@ set hls
 nnoremap x "_x
 nnoremap c "_c
 nnoremap <silent> <C-c> :nohls<CR>
-nnoremap n nzz
-nnoremap N Nzz
-nnoremap * *zz
-nnoremap # #zz
-nnoremap g* g*zz
-nnoremap g# g#zz
 
 autocmd BufEnter * silent! set autoindent smartindent
 
