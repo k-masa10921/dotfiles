@@ -25,12 +25,12 @@ setopt share_history
 setopt correct
 setopt print_eight_bit
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-  autoload -Uz compinit && compinit
-  compinit
-fi
+#if type brew &>/dev/null; then
+#  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+#
+#  autoload -Uz compinit && compinit
+#  compinit
+#fi
 
 # Add colors to Terminal
 export CLICOLOR=1
