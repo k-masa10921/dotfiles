@@ -13,20 +13,16 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'brglng/vim-im-select'
 Plug 'thinca/vim-visualstar'
+Plug 'easymotion/vim-easymotion'
+nmap s <Plug>(easymotion-overwin-f2)
+
 if system("uname")=="Darwin\n"
-  Plug 'joshdick/onedark.vim'
+  Plug 'navarasu/onedark.nvim'
 endif
 if system("uname")=="Linux\n"
   Plug 'raphamorim/lucario'
   Plug 'jdkanani/vim-material-theme'
   Plug 'tomasr/molokai'
-endif
-if exists('g:vscode')
-  Plug 'asvetliakov/vim-easymotion'
-  nmap s <Plug>(easymotion-s2)
-else
-  Plug 'easymotion/vim-easymotion'
-  nmap s <Plug>(easymotion-overwin-f2)
 endif
 call plug#end()
 
@@ -55,9 +51,15 @@ if system("uname")=="Linux\n"
 endif 
 if system("uname")=="Darwin\n"
   let g:im_select_default = 'com.apple.keylayout.ABC'
+  let g:onedark_config = {
+  \ 'style': 'cool',
+  \ 'toggle_style_key': '<leader>ts',
+  \ 'ending_tildes': v:true,
+  \ 'diagnostics': {
+    \ 'darker': v:false,
+    \ 'background': v:false,
+  \ },
+\ }
   colorscheme onedark
 endif
 
-" if exists('g:vscode')
-"   finish
-" endif
