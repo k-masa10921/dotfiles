@@ -47,16 +47,16 @@ nnoremap c "_c
 nnoremap <silent> <C-c> :nohls<CR>
 let g:mapleader = "\<Space>"
 
-" nnoremap <Leader> <Nop>
-" xnoremap <Leader> <Nop>
-" nnoremap [dev]    <Nop>
-" xnoremap [dev]    <Nop>
-" nmap     m        [dev]
-" xmap     m        [dev]
-" nnoremap [ff]     <Nop>
-" xnoremap [ff]     <Nop>
-" nmap     z        [ff]
-" xmap     z        [ff]
+nnoremap <Leader> <Nop>
+xnoremap <Leader> <Nop>
+nnoremap [dev]    <Nop>
+xnoremap [dev]    <Nop>
+nmap     m        [dev]
+xmap     m        [dev]
+nnoremap [ff]     <Nop>
+xnoremap [ff]     <Nop>
+nmap     z        [ff]
+xmap     z        [ff]
 
 if system("uname")=="Linux\n"
   syntax on
@@ -104,13 +104,13 @@ nmap     <silent> [dev]a  <Plug>(coc-codeaction-selected)iw
 "   autocmd FileType typescript,typescriptreact call <SID>coc_typescript_settings()
 " augroup END
 
-" function! s:show_documentation() abort
-"   if index(['vim','help'], &filetype) >= 0
-"     execute 'h ' . expand('<cword>')
-"   elseif coc#rpc#ready()
-"     call CocActionAsync('doHover')
-"   endif
-" endfunction
+function! s:show_documentation() abort
+  if index(['vim','help'], &filetype) >= 0
+    execute 'h ' . expand('<cword>')
+  elseif coc#rpc#ready()
+    call CocActionAsync('doHover')
+  endif
+endfunction
 
 "treesitter
 lua <<EOF
