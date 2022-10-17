@@ -22,6 +22,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/gina.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 if system("uname")=="Darwin\n"
   Plug 'navarasu/onedark.nvim'
 endif
@@ -40,6 +44,7 @@ set expandtab
 set splitright
 set clipboard+=unnamed
 set hls
+set nowrap
 
 " set map
 nnoremap x "_x
@@ -57,6 +62,10 @@ nnoremap [ff]     <Nop>
 xnoremap [ff]     <Nop>
 nmap     z        [ff]
 xmap     z        [ff]
+nmap     <C-Tab> :tabprev<CR> 
+nnoremap <C-w>s :split<CR>
+nnoremap <C-w>v :vsplit<CR>
+nnoremap <C-w>t :tabedit<CR>
 
 if system("uname")=="Linux\n"
   syntax on
@@ -146,5 +155,11 @@ nnoremap <silent> [ff]t  :<C-u>CocCommand fzf-preview.CocTypeDefinition<CR>
 nnoremap <silent> [ff]o  :<C-u>CocCommand fzf-preview.CocOutline --add-fzf-arg=--exact --add-fzf-arg=--no-sort<CR>
 
 "" fern
-nnoremap <silent> <Leader>e :<C-u>Fern . -drawer<CR>
-nnoremap <silent> <Leader>E :<C-u>Fern . -drawer -reveal=%<CR>
+nnoremap <silent> <Leader>E :<C-u>Fern . -drawer<CR>
+nnoremap <silent> <Leader>e :<C-u>Fern . -drawer -reveal=%<CR>
+
+" bufferline
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
