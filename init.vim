@@ -1,5 +1,5 @@
 " Plugin
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-jp/vimdoc-ja'
@@ -57,15 +57,6 @@ nmap     <C-Tab> :tabprev<CR>
 nnoremap <C-w>s :split<CR>
 nnoremap <C-w>v :vsplit<CR>
 nnoremap <C-w>t :tabedit<CR>
-
-if system("uname")=="Linux\n"
-  syntax on
-  colorscheme lucario
-  set t_Co=16
-endif 
-if system("uname")=="Darwin\n"
-  let g:im_select_default = 'com.apple.keylayout.ABC'
-endif
 
 "plugin setting
 "eary motion
