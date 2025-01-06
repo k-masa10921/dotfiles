@@ -1,10 +1,5 @@
 " Plugin
-if system("uname")=="Darwin\n"
-  call plug#begin('~/.config/nvim/plugged')
-endif
-if system("uname")=="Linux\n"
-  call plug#begin()
-endif
+call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-jp/vimdoc-ja'
@@ -26,14 +21,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
-if system("uname")=="Darwin\n"
-  Plug 'navarasu/onedark.nvim'
-endif
-if system("uname")=="Linux\n"
-  Plug 'raphamorim/lucario'
-  Plug 'jdkanani/vim-material-theme'
-  Plug 'tomasr/molokai'
-endif
+Plug 'navarasu/onedark.nvim'
 call plug#end()
 
 "set options
@@ -67,14 +55,7 @@ nnoremap <C-w>s :split<CR>
 nnoremap <C-w>v :vsplit<CR>
 nnoremap <C-w>t :tabedit<CR>
 
-if system("uname")=="Linux\n"
-  syntax on
-  colorscheme lucario
-  set t_Co=16
-endif 
-if system("uname")=="Darwin\n"
-  let g:im_select_default = 'com.apple.keylayout.ABC'
-endif
+let g:im_select_default = 'com.apple.keylayout.ABC'
 
 "plugin setting
 "eary motion
