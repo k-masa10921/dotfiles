@@ -174,8 +174,6 @@ cask 'zoom'
 
 tap 'homebrew/bundle'
 
-tap 'homebrew/cask-fonts'
-
 tap 'homebrew/services'
 
 tap 'daipeihust/tap'
