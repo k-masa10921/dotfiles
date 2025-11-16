@@ -32,6 +32,7 @@ brew 'gcc'
 brew 'gd'
 brew 'gdbm'
 brew 'gettext'
+brew 'gh'
 brew 'ghostscript'
 brew 'giflib'
 brew 'glib'
@@ -187,6 +188,6 @@ tap 'rcmdnk/file'
 brew 'brew-file'
 
 # App Store applications
-mas 'Keynote (14.0)', id: 409183694
-mas 'LINE (9.5.0)', id: 539883307
+mas 'Keynote (14.4)', id: 409183694
+mas 'LINE (9.12.1)', id: 539883307
 mas 'Xcode (16.2)', id: 497799835
