@@ -11,6 +11,7 @@ brew 'autoconf'
 brew 'bat'
 brew 'berkeley-db@5'
 brew 'bison'
+brew 'boost'
 brew 'brotli'
 brew 'bzip2'
 brew 'c-ares'
@@ -120,6 +121,7 @@ brew 'openexr'
 brew 'openjpeg'
 brew 'openjph'
 brew 'openssl@3'
+brew 'osmium-tool'
 brew 'p11-kit'
 brew 'pango'
 brew 'pcre2'
@@ -228,8 +230,3 @@ brew 'im-select'
 
 tap 'rcmdnk/file'
 brew 'brew-file'
-
-# App Store applications
-mas 'Keynote (14.4)', id: 409183694
-mas 'LINE (9.12.1)', id: 539883307
-mas 'Xcode (16.2)', id: 497799835
