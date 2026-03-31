@@ -64,10 +64,12 @@ function history-merge --on-event fish_preexec
 end
 
 # BrewFile設定の読み込み
+set -gx HOMEBREW_BREWFILE_APPSTORE 0  # App Store アプリの追跡を無効化 (mdlsエラー回避)
 if test -f (brew --prefix)/etc/brew-wrap.fish  # BrewFileラッパーが存在するか確認
     source (brew --prefix)/etc/brew-wrap.fish  # BrewFileラッパースクリプトを読み込む
     function _post_brewfile_update  # BrewFile更新後の処理を定義
-        brew file update  # BrewFileの更新を実行
+        brew file update  # BrewFileの更新を実行 (kondo_dotfiles/ → ~/dotfiles)
+        git -C "$HOME/dotfiles" push origin master 2>/dev/null &  # ~/dotfiles → GitHub
     end
 end
 fish_add_path "$HOME/.local/bin"
