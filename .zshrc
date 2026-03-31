@@ -54,3 +54,8 @@ if [[ ! -n $TMUX ]]; then
     :  # Start terminal normally
   fi
 fi
+
+# brew-file wrapper: keep Brewfile synced on every brew command
+brew() {
+  command /opt/homebrew/bin/brew file brew "$@"
+}

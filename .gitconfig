@@ -1,0 +1,16 @@
+[user]
+	email = k.masa0921@gmail.com
+	name = kondo
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[diff]
+	colorMoved = default
+[merge]
+	conflictstyle = diff3
