@@ -37,9 +37,11 @@ cd ~/dotfiles && bash setup.sh
 # 5. anyenv で言語ランタイムをインストール
 anyenv install nodenv
 anyenv install phpenv
+anyenv install pyenv
 exec $SHELL -l
 nodenv install 20.7.0 && nodenv global 20.7.0
-phpenv install 8.3.13 && phpenv global 8.3.13
+phpenv install 8.4.19 && phpenv global 8.4.19
+pyenv install 3.14.3 && pyenv global 3.14.3
 ```
 
 ## 主なツール
@@ -50,7 +52,7 @@ phpenv install 8.3.13 && phpenv global 8.3.13
 | エディタ | Neovim (vim-plug + coc.nvim + telescope) |
 | ターミナル | tmux |
 | パッケージ管理 | Homebrew + brew-file (Brewfile 自動同期) |
-| 言語管理 | anyenv (nodenv, phpenv) |
+| 言語管理 | anyenv (nodenv, phpenv, pyenv) |
 | Git | lazygit |
 
 ## Brewfile の自動同期
