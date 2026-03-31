@@ -4,12 +4,12 @@ tap "rcmdnk/file"
 brew "anyenv"
 # Library for manipulating PNG images
 brew "libpng"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Portable library for importing many well-known 3D model formats
 brew "assimp"
 # Automatic configure script builder
 brew "autoconf"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Regular expressions library
 brew "oniguruma"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -38,14 +38,6 @@ brew "fzf"
 brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
-# Network authentication protocol
-brew "krb5"
-# GNOME XML library
-brew "libxml2"
-# Geospatial Data Abstraction Library
-brew "gdal"
 # GitHub command-line tool
 brew "gh"
 # OpenType text shaping engine
@@ -64,6 +56,8 @@ brew "icu4c@76"
 brew "jansson"
 # Image manipulation library
 brew "jpeg"
+# Network authentication protocol
+brew "krb5"
 # Add indentation to LaTeX files
 brew "latexindent"
 # Simple terminal UI for git commands
@@ -74,6 +68,8 @@ brew "libedit"
 brew "libiconv"
 # C99 library which implements a VT220 or xterm terminal emulator
 brew "libvterm"
+# GNOME XML library
+brew "libxml2"
 # C library for reading, creating, and modifying zip archives
 brew "libzip"
 # Simple tool to make locally trusted development certificates
@@ -84,10 +80,10 @@ brew "msgpack"
 brew "neovim"
 # Libosmium-based command-line tool for processing OpenStreetMap data
 brew "osmium-tool"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Core utilities for Python packages
 brew "python-packaging"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Cross-platform application and UI framework
 brew "qt@5"
 # Generate C-based recognizers from regular expressions
